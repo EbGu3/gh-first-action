@@ -1,0 +1,19 @@
+# PASO 1: Definir el nombre
+name: First Workflow
+# PASO 2: Definir cuando se ejecutara
+on: workflow_dispatch
+# PASO 3: Definir que deberia de hacer
+jobs:
+  # PASO 4: Definir el job, puede ser cualquier nombre
+  first-job:
+    # PASO 5: Definir el Entorno(Corredor) que ejecutara los diferentes pasos
+    # Documentacion => https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners/about-github-hosted-runners  
+      runs-on: ubuntu-latest
+      # PASO 6: Definimos los pasos
+      steps:
+        - name: Print greeting
+          run: echo "Hellow 😎🦈"
+        - name: Print goodbye
+          run: echo "Bye! ❌"
+        
+
