@@ -1,0 +1,12 @@
+name: Multi-Line Shell Comands
+on: workflow_dispatch
+jobs:
+  init-job:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Run multi commands in shell
+          run: |
+            echo "I love pizza 🍕"
+            echo "The first letter of my love is I ❤️"
+            echo "I like github 💻😎"
+            
